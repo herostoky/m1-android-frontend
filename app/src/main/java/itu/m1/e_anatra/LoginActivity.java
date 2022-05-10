@@ -28,7 +28,8 @@ public class LoginActivity extends AppCompatActivity {
         loginButton.setText("Huhuhu");
         Log.d("Titre", String.valueOf(loginButton.getText()));
         Log.d("VALUE", String.valueOf(nameEditText.getText()));
-        startMainActivity();
+
+//        startMainActivity();
     }
 
     private void startMainActivity() {
