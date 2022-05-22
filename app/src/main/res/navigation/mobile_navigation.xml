@@ -12,14 +12,14 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="itu.m1.e_anatra.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_favs"
+        android:name="itu.m1.e_anatra.ui.favs.FavsFragment"
+        android:label="@string/menu_favs"
+        tools:layout="@layout/fragment_favs" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="itu.m1.e_anatra.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_settings"
+        android:name="itu.m1.e_anatra.ui.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_setting" />
 </navigation>

@@ -22,7 +22,7 @@ public class BaseResult<E> {
     }
 
     public boolean isSuccessful() {
-        return ((boolean)(this.status == BaseResult.STATUS_OK));
+        return (String.valueOf(this.status).compareTo(BaseResult.STATUS_OK) == 0);
     }
 
     public String getStatus() {

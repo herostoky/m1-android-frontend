@@ -3,6 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/M1/Rojo/Projet Android/Ecole-front/app/src/main/res/drawable/custom_border.xml" value="0.142" />
+        <entry key="..\:/M1/Rojo/Projet Android/Ecole-front/app/src/main/res/layout/activity_login.xml" value="0.14427083333333332" />
+        <entry key="..\:/M1/Rojo/Projet Android/Ecole-front/app/src/main/res/layout/activity_splash.xml" value="0.12158054711246201" />
+        <entry key="..\:/M1/Rojo/Projet Android/Ecole-front/app/src/main/res/layout/fragment_home.xml" value="0.13177083333333334" />
+        <entry key="..\:/M1/Rojo/Projet Android/Ecole-front/app/src/main/res/layout/list_courses.xml" value="0.14266304347826086" />
+        <entry key="..\:/M1/Rojo/Projet Android/Ecole-front/app/src/main/res/layout/nav_header_main.xml" value="0.13177083333333334" />
+        <entry key="..\:/M1/Rojo/Projet Android/Ecole-front/app/src/main/res/menu/activity_main_drawer.xml" value="0.13177083333333334" />
+        <entry key="..\:/M1/Rojo/Projet Android/Ecole-front/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.201" />
         <entry key="..\:/projects/ITU/android/m1-android-frontend/app/src/main/res/layout/content_main.xml" value="0.27219202898550726" />
         <entry key="..\:/projects/ITU/android/m1-android/m1-android-frontend/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.17269076305220885" />
         <entry key="..\:/projects/ITU/android/m1-android/m1-android-frontend/app/src/main/res/layout-w936dp/activity_login.xml" value="0.2015625" />
@@ -12,7 +20,6 @@
         <entry key="..\:/projects/ITU/android/m1-android/m1-android-frontend/app/src/main/res/layout/content_main.xml" value="0.27219202898550726" />
         <entry key="..\:/projects/ITU/android/m1-android/m1-android-frontend/app/src/main/res/layout/fragment_gallery.xml" value="0.27219202898550726" />
         <entry key="..\:/projects/ITU/android/m1-android/m1-android-frontend/app/src/main/res/layout/fragment_home.xml" value="0.27219202898550726" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.23596014492753623" />
       </map>
     </option>
   </component>

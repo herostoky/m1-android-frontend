@@ -2,6 +2,7 @@ package itu.m1.e_anatra.service.api;
 
 import itu.m1.e_anatra.service.api.request.user.UserLoginRequest;
 import itu.m1.e_anatra.service.api.result.BaseResult;
+import itu.m1.e_anatra.service.api.result.course.CourseListResult;
 import itu.m1.e_anatra.service.api.result.user.UserConnectionResult;
 import itu.m1.e_anatra.service.api.result.user.UserListResult;
 import retrofit2.Call;
@@ -16,5 +17,7 @@ public interface Api {
     Call<BaseResult<UserListResult>> findAllUsers();
     @POST("user/login")
     Call<BaseResult<UserConnectionResult>> userLogin(@Body UserLoginRequest userLoginRequest);
+    @GET("content/find-all")
+    Call<BaseResult<CourseListResult>> findAllCourses();
 
 }

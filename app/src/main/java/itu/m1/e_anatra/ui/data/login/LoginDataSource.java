@@ -1,6 +1,7 @@
-package itu.m1.e_anatra.ui.data;
+package itu.m1.e_anatra.ui.data.login;
 
-import itu.m1.e_anatra.ui.data.model.LoggedInUser;
+import itu.m1.e_anatra.ui.data.Result;
+import itu.m1.e_anatra.ui.data.login.model.LoggedInUser;
 
 import java.io.IOException;
 

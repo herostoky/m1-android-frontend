@@ -1,4 +1,4 @@
-package itu.m1.e_anatra.ui.data.model;
+package itu.m1.e_anatra.ui.data.login.model;
 
 /**
  * Data class that captures user information for logged in users retrieved from LoginRepository
