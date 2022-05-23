@@ -4,24 +4,20 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 import itu.m1.e_anatra.R;
 import itu.m1.e_anatra.databinding.FragmentHomeBinding;
 import itu.m1.e_anatra.service.CourseService;
 import itu.m1.e_anatra.service.api.result.course.CourseResult;
+import itu.m1.e_anatra.ui.coursesdetails.CourseDetailsFragment;
 import itu.m1.e_anatra.ui.data.adapter.CoursesAdapter;
-import itu.m1.e_anatra.ui.data.holder.CoursesHolder;
-import itu.m1.e_anatra.ui.data.model.CoursesModel;
 
 public class HomeFragment extends Fragment {
 
@@ -61,7 +57,19 @@ public class HomeFragment extends Fragment {
         recyclerView = this.getView().findViewById(R.id.courses_rv);
         recyclerView.setLayoutManager(new LinearLayoutManager(this.getContext()));
         recyclerView.setHasFixedSize(true);
-        coursesAdapter = new CoursesAdapter(this.getContext(), courses);
+        coursesAdapter = new CoursesAdapter(this.getContext(), courses, this);
         recyclerView.setAdapter(coursesAdapter);
+    }
+
+    public void showCourseDetailsFragment(String courseId) {
+        Bundle bundle = new Bundle();
+        bundle.putString(CourseResult.COURSE_ID_KEY, courseId); // Put anything what you want
+
+        CourseDetailsFragment courseDetailsFragment = new CourseDetailsFragment();
+        courseDetailsFragment.setArguments(bundle);
+        getFragmentManager().beginTransaction()
+                .replace(((ViewGroup)this.getView().getParent()).getId(), courseDetailsFragment, "courseDetailsFragment")
+                .addToBackStack(null)
+                .commit();
     }
 }

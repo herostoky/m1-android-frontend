@@ -3,6 +3,8 @@ package itu.m1.e_anatra.service.api.result.course;
 import com.google.gson.annotations.SerializedName;
 
 public class CourseResult {
+    public static String COURSE_ID_KEY = "COURSE_ID_KEY";
+
     @SerializedName("_id")
     private String id;
 

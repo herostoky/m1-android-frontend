@@ -5,23 +5,22 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import androidx.recyclerview.widget.RecyclerView;
-
 import java.util.List;
-
 import itu.m1.e_anatra.R;
 import itu.m1.e_anatra.service.api.result.course.CourseResult;
 import itu.m1.e_anatra.ui.data.holder.CoursesHolder;
-import itu.m1.e_anatra.ui.data.model.CoursesModel;
+import itu.m1.e_anatra.ui.home.HomeFragment;
 
 public class CoursesAdapter extends RecyclerView.Adapter<CoursesHolder> {
     private Context context;
     private List<CourseResult> courses;
+    private HomeFragment homeFragment;
 
-    public CoursesAdapter(Context context, List<CourseResult> courses) {
+    public CoursesAdapter(Context context, List<CourseResult> courses, HomeFragment homeFragment) {
         this.context = context;
         this.courses = courses;
+        this.homeFragment = homeFragment;
     }
 
     @Override
@@ -38,6 +37,7 @@ public class CoursesAdapter extends RecyclerView.Adapter<CoursesHolder> {
         holder.view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                homeFragment.showCourseDetailsFragment(course.getId());
                 Log.d("Clicked", course.getId());
             }
         });

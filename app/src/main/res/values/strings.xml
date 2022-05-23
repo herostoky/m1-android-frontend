@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">E-Anatra</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Ouvrir volet de navigation</string>
+    <string name="navigation_drawer_close">Fermer volet de navigation</string>
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
+    <string name="nav_header_desc">Entête de navigation</string>
+    <string name="action_settings">Paramètres</string>
 
     <!--  MENU  -->
     <string name="menu_home">Cours</string>
@@ -14,24 +14,25 @@
 
     <string name="title_activity_login">LoginActivity</string>
     <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
+    <string name="prompt_password">Mot de passe</string>
+    <string name="action_sign_in">Connection ou inscription</string>
+    <string name="action_sign_in_short">Inscription</string>
+    <string name="welcome">"Bienvenue !"</string>
+    <string name="invalid_username">Pseudo non valide</string>
+    <string name="invalid_password">Le mot de passe doit contenir au moin 5lettres</string>
+    <string name="login_failed">"Problème d'authentification"</string>
 
     <!--    TEMPLATE   -->
-    <string name="register">REGISTER</string>
+    <string name="register">INSCRIPTION</string>
     <string name="login_email_hint">Pseudo</string>
     <string name="login_btn_label">Se connecter</string>
+    <string name="logout_btn_label">Deconnexion</string>
     <string name="login_label">Connexion</string>
     <string name="login_password_hint">Mot de passe</string>
-    <string name="signup_login_hint">Already have an account? Sign In</string>
-    <string name="login_signup_hint">Don\'t have an account? Sign Up</string>
-    <string name="login_name_hint">Name</string>
-    <string name="login_mobile_number_hint">Mobile Number</string>
+    <string name="signup_login_hint">Vous avez un compte? Connectez-vous</string>
+    <string name="login_signup_hint">Vous n\'avez pas de compte? Inscrivez-vous</string>
+    <string name="login_name_hint">Nom</string>
+    <string name="login_mobile_number_hint">Numero de téléphone</string>
 
     <!--    MESSAGES D'ERREUR   -->
     <string name="login.error">Erreur durant la connexion</string>

@@ -17,12 +17,17 @@ public class UserConnectionSession {
     public boolean isUserConnected() {
         String token    = this.session.getSession(UC_TOKEN_SESSION_KEY);
         String username = this.session.getSession(UC_USERNAME_SESSION_KEY);
-        return (String.valueOf(token).compareTo("null") == 0) && (String.valueOf(username).compareTo("null") == 0);
+        return (String.valueOf(token).compareTo("null") != 0) && (String.valueOf(username).compareTo("null") != 0);
     }
 
     public void setUserConnectionSession(UserConnectionResult userConnectionResult) {
         this.session.saveSession(UC_TOKEN_SESSION_KEY, String.valueOf(userConnectionResult.getToken().getToken()));
         this.session.saveSession(UC_USERNAME_SESSION_KEY, String.valueOf(userConnectionResult.getToken().getUser().getUsername()));
+    }
+
+    public void unsetUserConnectionSession() {
+        this.session.destroySession(UC_TOKEN_SESSION_KEY);
+        this.session.destroySession(UC_USERNAME_SESSION_KEY);
     }
 
 

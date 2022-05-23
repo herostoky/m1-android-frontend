@@ -5,6 +5,7 @@ import android.util.Log;
 import java.util.List;
 
 import itu.m1.e_anatra.LoginActivity;
+import itu.m1.e_anatra.MainActivity;
 import itu.m1.e_anatra.R;
 import itu.m1.e_anatra.service.api.RetrofitClient;
 import itu.m1.e_anatra.service.api.request.user.UserLoginRequest;
@@ -68,5 +69,11 @@ public class UserService {
             }
         });
         return null;
+    }
+
+    public void userLogout(MainActivity mainActivity) {
+        UserConnectionSession userConnectionSession = new UserConnectionSession(mainActivity.getSessionManagement());
+        userConnectionSession.unsetUserConnectionSession();
+        mainActivity.startLoginActivity();
     }
 }

@@ -13,18 +13,14 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
-
     <style name="Theme.EAnatra.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-
     <style name="Theme.EAnatra.WActionBar">
         <item name="windowActionBar">true</item>
         <item name="windowNoTitle">false</item>
     </style>
-
     <style name="Theme.EAnatra.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
-    <style name="Theme.EAnatra.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="Theme.EAnatra.PopupOverlay"  parent="ThemeOverlay.AppCompat.Light" />
 </resources>
